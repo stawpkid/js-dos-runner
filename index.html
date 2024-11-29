@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Awesome Game</title>
+
+    <!-- js-dos style sheet -->
+    <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+
+    <!-- js-dos script -->
+    <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
+</head>
+<body>
+    <h1>My Awesome Game</h1>
+
+    <!-- Create a div element where js-dos will render the game -->
+    <div id="dos" style="width: 100vw; height: 60vw;"></div>
+
+    <script>
+        // Load the DOS game using the js-dos bundle URL
+        Dos(document.getElementById("dos"), {
+            url: "https://cdn.dos.zone/original/2X/9/9ed7eb9c2c441f56656692ed4dc7ab28f58503ce.jsdos", // The bundle URL
+        });
+    </script>
+</body>
+</html>
