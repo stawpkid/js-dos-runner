@@ -32,6 +32,11 @@
                 autoStart: true, // Automatically start the game
                 url: gameLink,   // Dynamically load the game from the provided URL
             });
+            setTimeout(6000);
+document.querySelectorAll('.sidebar, .w-12.flex-shrink-0').forEach(element => {
+  element.remove();
+});
+
         } else {
             alert("No gameLink provided in the URL.");
         }
