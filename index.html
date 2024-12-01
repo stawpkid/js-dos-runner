@@ -27,13 +27,15 @@
         const gameLink = getUrlParameter('gamelink');
 
         if (gameLink) {
-            // If gamelink is provided, load the game bundle
-            Dos(document.getElementById("dos"), autoStart {
-                url: gameLink, // Dynamically load the game from the provided URL
+    // If gameLink is provided, load the game bundle
+            Dos(document.getElementById("dos"), {
+                autoStart: true, // Automatically start the game
+                url: gameLink,   // Dynamically load the game from the provided URL
             });
         } else {
-            alert("No gamelink provided in the URL.");
+            alert("No gameLink provided in the URL.");
         }
+
     </script>
 </body>
 </html>
